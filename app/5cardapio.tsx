@@ -8,6 +8,13 @@ export default function App() {
       <Image source={require('../assets/logo.png')} />
       <View style={styles.container}>
       <Text style={styles.titulo}>Cardapio</Text>
+      <br />
+      <br />
+      <Image source={require('../assets/cardapio.png')} />
+      <br />
+      <br />
+      <br />
+
       <Link href="/">sugestoes</Link>
 
 
@@ -24,7 +31,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
