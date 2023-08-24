@@ -6,21 +6,21 @@ export default function AppLayout() {
     
     <Drawer>
       <Drawer.Screen
-        name="index" // This is the name of the page and must match the url from root
+        name="index" 
         options={{
           drawerLabel: "Home",
           title: "Bem-vindo",
         }}
       />
       <Drawer.Screen
-        name="telaA" // This is the name of the page and must match the url from root
+        name="telaA" 
         options={{
           drawerLabel: "Tela A",
           title: "Tela A",
         }}
       />
       <Drawer.Screen
-        name="telaB" // This is the name of the page and must match the url from root
+        name="telaB" 
         options={{
           drawerLabel: "Tela B",
           title: "Tela B",

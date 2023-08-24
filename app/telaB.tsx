@@ -1,15 +1,22 @@
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,Image } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.titulo}>Tela B</Text>
-      <Link href="/">Voltar para Home</Link>
+    <View style={styles.logo}>
+      <Image source={require('../assets/logo.png')} />
+      <View style={styles.container}>
+      <Text style={styles.titulo}>Cardapio</Text>
+      <Link href="/">sugestoes</Link>
 
 
       <StatusBar style="auto" />
+      </View>
+
+      <View style={styles.footer}>
+      <Image source={require('../assets/footer.png')} />
+      </View>
     </View>
   );
 }
@@ -24,5 +31,13 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 24,
     fontWeight: 'bold',
-  }
+  },
+  logo:{
+    alignItems: 'center',
+
+  },
+footer:{
+  alignItems: 'center',
+  marginTop: 450,
+}
 });
