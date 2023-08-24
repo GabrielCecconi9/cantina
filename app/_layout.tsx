@@ -13,20 +13,39 @@ export default function AppLayout() {
         }}
       />
       <Drawer.Screen
-        name="telaA" 
+        name="2login" 
         options={{
-          drawerLabel: "Tela A",
-          title: "Tela A",
+          drawerLabel: "Login",
+          title: "Login",
         }}
       />
       <Drawer.Screen
-        name="telaB" 
+        name="3escolher" 
         options={{
-          drawerLabel: "Tela B",
-          title: "Tela B",
+          drawerLabel: "escolher cardapio",
+          title: "cardapios",
     
         }}
       />
+      
+      <Drawer.Screen
+        name="5cardapio" 
+        options={{
+          drawerLabel: "cardapio do dia",
+          title: "cardapio do dia",
+    
+        }}
+      
+      />
+      <Drawer.Screen
+        name="7sugestoes" 
+        options={{
+          drawerLabel: "Sugestões",
+          title: "Sugestões",
+    
+        }}
+      />
+
     </Drawer>
 
   );
